@@ -1,4 +1,5 @@
 -- Auto generated script file --
+require("animations")
 
 --hide vanilla armor model
 vanilla_model.ARMOR:setVisible(false)

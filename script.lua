@@ -12,8 +12,7 @@ function isBeingLookedAt()
     -- Iterate through all players in the world
     for _, otherPlayer in pairs(world.getPlayers()) do
         if otherPlayer ~= player then
-            local eyePos = otherPlayer:getPos() +
-                               vec(0, otherPlayer:getEyeHeight(), 0)
+            local eyePos = otherPlayer:getPos() + vec(0, otherPlayer:getEyeHeight(), 0)
             local eyeEnd = eyePos + (otherPlayer:getLookDir() * 20)
 
             -- Perform raycast to check if the other player is looking at me
